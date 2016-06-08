@@ -1,0 +1,6 @@
+div(ng-show="blogApp.showComments == true")
+    h5 List of comments
+    ul(ng-repeat="comment in blogApp.commentsData")
+        li
+            small name:{{comment.name}} | body: {{comment.body}}
+    button(ng-click="blogApp.displayPosts(blogApp.selectedPostId)") Back to posts

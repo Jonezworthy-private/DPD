@@ -1,0 +1,8 @@
+extends ./layout/layout.jade
+
+
+block content
+    section(ng-controller="blogController as blogApp")
+        include users
+        include posts
+        include comments

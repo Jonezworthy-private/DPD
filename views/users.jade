@@ -1,0 +1,6 @@
+div(ng-show="blogApp.showUsers === true")
+    h5 List of users
+    ul(ng-repeat="user in blogApp.usersData")
+        li(ng-click="blogApp.displayPosts(user.id)")
+            small id:{{user.id}} | name: {{user.name}} | username: {{user.username}} |  email: {{user.email}} 
+            

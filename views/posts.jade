@@ -1,0 +1,6 @@
+div(ng-show="blogApp.showPosts === true")
+    h5 List of posts
+    ul(ng-repeat="post in blogApp.postsData")
+        li(ng-click="blogApp.displayComments(post.userId, post.id)")
+            small postId:{{post.id}} | title: {{post.title}} | body: {{post.body}}
+    button(ng-click="blogApp.displayUsers()") Back to users
